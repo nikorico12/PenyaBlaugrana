@@ -1,0 +1,90 @@
+/*Paleta colors Barça
+Dorat: #edbb00
+Blau: #004d98
+Grana: #a50044
+Vermell: #a50044
+Groc: #ffed02
+Negre: #000000
+*/
+@font-face {
+    font-family: 'FC Barcelona';
+    src: local('FC Barcelona PLAY SOLID'), local('FC-Barcelona-PLAY-SOLID'),
+        url('FCBARCELONAPLAYSOLID.woff2') format('woff2'),
+        url('FCBARCELONAPLAYSOLID.woff') format('woff'),
+        url('FCBARCELONAPLAYSOLID.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    background: linear-gradient(90deg,#004d98,#a50044);
+}
+
+body {
+    font-family: "FC Barcelona";
+    color: #ffed02;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: rgba(0,0,0,0.3);
+    padding: 0 4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #edbb00;
+    text-align: center;
+    padding: 2rem;
+    font-size: 50px;
+}
+
+p {
+    color: white;
+}
+
+.penya_logo_inici_container {
+    text-align: center;
+    
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
+.content {
+    flex: 1;
+}
+
+
+footer {
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+Depuracion
+*/
+.content {
+  border: 2px dashed red;
+}
+main {
+  border: 2px dashed blue;
+}
