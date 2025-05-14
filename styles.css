@@ -22,11 +22,8 @@ html, body {
     margin: 0;
 }
 
-html {
-    background: linear-gradient(90deg,#004d98,#a50044);
-}
-
 body {
+    background: linear-gradient(90deg,#004d98,#a50044);
     font-family: "FC Barcelona";
     color: #ffed02;
     padding: 0 10%;
@@ -35,8 +32,7 @@ body {
 }
 
 main {
-    background-color: rgba(0,0,0,0.3);
-    padding: 0 4rem;
+    padding: 1rem 4rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -50,9 +46,19 @@ h1 {
     font-size: 50px;
 }
 
-p {
-    color: white;
+h2 {
+    padding-top: 1rem;
 }
+
+article {
+    text-align: center;
+}
+
+article p {
+    color: white;
+    font-size: 20px;
+}
+
 
 .penya_logo_inici_container {
     text-align: center;
@@ -68,9 +74,30 @@ p {
     flex: 1;
 }
 
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Limita el ancho en escritorio */
+  margin: 0 auto; /* Centra el mapa */
+  padding-bottom: 30%; /* Proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
 
 footer {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.3);
     text-align: center;
     height: 60px;
     color: white;
@@ -79,6 +106,34 @@ footer {
     justify-content: center;
 }
 
+.footer {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.footer-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px; /* Tamaño de la imagen */
+  transform: translate(-50%, -50%);
+  opacity: 0.4; /* Para que no tape el texto */
+  z-index: 0;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Adds a semi-transparent overlay to the footer background for better text readability */
+.footer-bg::before {
+    background-color: rgba(0,0,0,0.3);
+    content: "";
+}
 /*
 Depuracion
 */
