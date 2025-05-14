@@ -8,13 +8,14 @@ Negre: #000000
 */
 @font-face {
     font-family: 'FC Barcelona';
-    src: local('FC Barcelona PLAY SOLID'), local('FC-Barcelona-PLAY-SOLID'),
-        url('FCBARCELONAPLAYSOLID.woff2') format('woff2'),
-        url('FCBARCELONAPLAYSOLID.woff') format('woff'),
-        url('FCBARCELONAPLAYSOLID.ttf') format('truetype');
+    src: 
+        url('./FCBARCELONAPLAYSOLID/FCBARCELONAPLAYSOLID.woff2') format('woff2'),
+        url('./FCBARCELONAPLAYSOLID/FCBARCELONAPLAYSOLID.woff') format('woff'),
+        url('./FCBARCELONAPLAYSOLID/FCBARCELONAPLAYSOLID.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
+
 
 
 html, body {
